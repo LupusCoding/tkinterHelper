@@ -1,0 +1,8 @@
+README.md
+setup.py
+tkinterHelper/__init__.py
+tkinterHelper/menuHelper.py
+tkinterHelper.egg-info/PKG-INFO
+tkinterHelper.egg-info/SOURCES.txt
+tkinterHelper.egg-info/dependency_links.txt
+tkinterHelper.egg-info/top_level.txt
