@@ -11,6 +11,10 @@ This package requires: tkinter
 * [MenuHelper](#menuhelper)
 
 ## MenuHelper
+![MenuHelper Tests](https://img.shields.io/badge/tests-5_passed-success)
+![MenuHelper Tests](https://img.shields.io/badge/tests-0_ignored-important)
+![MenuHelper Tests](https://img.shields.io/badge/tests-0_failed-critical)
+
 Create menus in a simple way, by using the MenuHelper and its' methods like add_item() 
 or add_subitem().
 
