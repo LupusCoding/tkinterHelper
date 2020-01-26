@@ -1,4 +1,4 @@
-# tkinterHelper
+# tkinterHelper ![LICENSE](https://img.shields.io/github/license/LupusCoding/tkinterHelper)
 
 The package tkinterHelper let you easily create tkinter objects.
 
@@ -11,9 +11,7 @@ This package requires: tkinter
 * [MenuHelper](#menuhelper)
 
 ## MenuHelper
-![MenuHelper Tests](https://img.shields.io/badge/tests-5_passed-success)
-![MenuHelper Tests](https://img.shields.io/badge/tests-0_ignored-important)
-![MenuHelper Tests](https://img.shields.io/badge/tests-0_failed-critical)
+![MenuHelper Tests](https://img.shields.io/github/workflow/status/LupusCoding/tkinterHelper/CI)
 
 Create menus in a simple way, by using the MenuHelper and its' methods like add_item() 
 or add_subitem().
