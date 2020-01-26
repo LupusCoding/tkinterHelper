@@ -19,7 +19,7 @@ jobs:
         python-version: 3.6
     - name: Setup Tkinter
       run: |
-        sudo apt-get install Tcl Tk python-tk python3-tk tk-dev
+        sudo apt-get install python-tk python3-tk tk-dev
         pyenv install 3.7.2
     - name: Install dependencies
       run: |
