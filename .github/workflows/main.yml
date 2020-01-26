@@ -33,15 +33,15 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistic
-    - name: Start virtual display driver
+    - name: Run MenuHelper TestSuite
       run: |
+        # Start virtual display driver
         disp=:12
         screen=0
         geom=640x480x24
         exec Xvfb $disp -screen $screen $geom 2>/tmp/Xvfb.log &
         export DISPLAY=:12
-    - name: Run MenuHelper TestSuite
-      run: |
+        # Run TestSuite
         python3 -m pytest tkinterHelper/menuHelperTestSuite.py
-    - name: kill virtual display driver
-      run: kill $!
+#     - name: kill virtual display driver
+#       run: kill $!
