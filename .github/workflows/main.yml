@@ -20,6 +20,7 @@ jobs:
         sudo apt-get install tk-dev python3-tk python3 python3.7 python-pip python3-pip python3-pytest
         sudo rm /usr/bin/python
         sudo ln -s /usr/bin/python3.7 /usr/bin/python
+        sudo apt-get install xvfb
         
     - name: Install dependencies
       run: |
@@ -36,4 +37,10 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistic
     - name: Run MenuHelper TestSuite
       run: |
+        disp=:8
+        screen=0
+        geom=640x480x24
+        exec Xvfb $disp -screen $screen $geom 2>/tmp/Xvfb.log &
+        export DISPLAY=:8
         python3 -m pytest tkinterHelper/menuHelperTestSuite.py
+        kill $!
